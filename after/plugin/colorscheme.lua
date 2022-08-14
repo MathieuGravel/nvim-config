@@ -2,4 +2,7 @@
 -- vim.g.tokyonight_transparent = true
 
 vim.opt.background = "dark"
-vim.cmd("silent! colorscheme tokyonight")
+
+local colorscheme = 'tokyonight'
+
+vim.cmd("silent! colorscheme " .. colorscheme)
