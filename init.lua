@@ -1,4 +1,4 @@
-require('plugins')
-require('set')
-require('keymap')
+require('my_config.plugins')
+require('my_config.options')
+require('my_config.keymaps')
 
