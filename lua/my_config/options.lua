@@ -7,6 +7,9 @@ vim.opt.cursorline = true
 vim.opt.wrap = false
 -- vim.opt.colorcolumn = '80'
 vim.opt.spell = true
+vim.opt.fileformat = 'unix'
+vim.opt.autowriteall = true
+
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -20,6 +23,10 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
+local colorscheme = 'tokyonight'
+vim.opt.background = 'dark'
+vim.cmd("silent! colorscheme " .. colorscheme)
+
 if vim.fn.has('win32') == 1 then
-    vim.g.shell = 'powershell'    
+    vim.g.shell = 'powershell'
 end
