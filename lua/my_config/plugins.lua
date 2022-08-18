@@ -24,8 +24,8 @@ return packer.startup(function(use)
     -- Packer can manage itself 
     use 'wbthomason/packer.nvim'
 
-    use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-    use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+    use 'nvim-lua/popup.nvim' -- An implementation of the Popup API from vim in Neovim
+    use 'nvim-lua/plenary.nvim' -- Useful lua functions used ny lots of plugins
 
     use 'folke/tokyonight.nvim'
     use {
@@ -42,16 +42,17 @@ return packer.startup(function(use)
 
     -- LSP and completion 
     use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+    use 'williamboman/nvim-lsp-installer' -- Simple to use language server installer
     use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-    use "hrsh7th/cmp-buffer" -- buffer completions
-    use "hrsh7th/cmp-path" -- path completions
-    use "hrsh7th/cmp-cmdline" -- cmdline completions
-    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+    use 'hrsh7th/cmp-buffer' -- buffer completions
+    use 'hrsh7th/cmp-path' -- path completions
+    use 'hrsh7th/cmp-cmdline' -- cmdline completions
+    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin 
 
     -- Snippets
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-    use "rafamadriz/friendly-snippets"
+    use 'rafamadriz/friendly-snippets'
 
     -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then

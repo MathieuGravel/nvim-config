@@ -8,7 +8,7 @@ vim.keymap.set({'n', 'i', 'v'}, '<Right>', '<Nop>')
 vim.keymap.set('n', '<Tab>', '<CMD>tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', '<CMD>tabprev<CR>')
 
--- Move Window
+-- Move Window 
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
